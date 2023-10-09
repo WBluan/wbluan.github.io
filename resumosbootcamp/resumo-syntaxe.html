@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/moleculas/resumos/resumo-csharp.css">
+    <title>Sintaxe e Tipos de Dados em C#</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="padding-left: 20px;">Sintaxe e Tipos de Dados em C#</h1>
+    </div>
+    <div class="borderlessons" id="aula1">
+        <div>
+            <h2>Aula 1 - Entendendo a estrutura de um projeto.</h2>
+        </div>
+        <div>
+            <h3>Sintaxe e convenções</h3>
+            <p>Vamos estudar como é composto um projeto, classes e suas convenções em C#</p>
+            <br>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/inicio-projeto.png"><br>
+            <p>Ao utilizarmos o comando <i>dotnet new console</i> no terminal do nosso projeto,
+                um novo projeto em C# com uma pasta bin, outra pasta obj e dois arquivos. Esses arquivos são
+                <b>a classe Program.cs</b> e o outro arquivo é composto do
+                <b>csproj</b>. Ele é um pouco mais difícil de ler, mas é igualmente importante ao Program.cs,
+                pois é um arquivo de projeto do C# onde contém algumas informações essenciais, que são descritivas para
+                o nosso
+                projeto, também conhecidas como metadados. Esse arquivo está usando uma linguagem XML, que abre uma tag,
+                insere o valor e fecha a tag.<br>
+                Temos uma tag que indica que a nossa saída (OutputType) vai ser executavel.
+            </p>
+        </div>
+    </div>
+    <div class="borderlessons" id="aula2">
+        <div>
+            <h2>Aula 2 - O conceito de classe</h2>
+        </div>
+        <div>
+            <h3>Classe</h3>
+            <p>A classe está relacionada com o conceito de abstração na programação orientada a objeto.</p><br>
+            <br>
+            <p>Uma abstração é um objeto do mundo real transformado em ubjeto na programação,
+                para que você possa trabalhar com ele e trabalhar com ele e implementar as suas ações.<br>
+                Exemplo: Um sistema de vendas possui um produto que está sendo vendido, e esse produto possui suas
+                caracteristicas(nome, preço),
+                essa venda possui um vendedor, que tembém tem suas caracteristicas(cpf, nome, endereço).<br>
+                Quando você transforma o "problema", ou quer traduzir o conceito do mundo real no seu software,
+                vecê precisa fazer uma abstração e trazer para seu programa:</p>
+            <img src="/src/assets/img-sintaxe/classe-pessoa.png"><br>
+            <p>Na imagem podemos ver que existe uma classe chamada pessoa, essa classe é identificada com
+                um nome de classe (Pessoa), o nome da pessoa (representada por uma string)
+                e sua idade (representada por um int[inteiro]).<br>
+                Poderiamos colocar divérsas outras informações sobre a pessoa, porém o ideal é colocar apenas o
+                essencial para o que nosso programa necessita.<br>
+                No final da classe, temos um método, sabemos que é um método pois ele fica depois dos
+                atributos da classe e o método também tem um parenteses ao final de seu nome.<br>
+                A classe também serve como um "Molde", ou seja, ela representa a construção de um objeto.<br>
+                Na direita da imagem é o nosso objeto construido, pois ele tem as caracteristicas declaradas
+                na classe, e está usando a função de se apresentar.
+            </p>
+            <p>
+                Em baixo da imagem, temos a classe em formato de código. Vamos analizar o que cada linha desse código
+                faz na próxima aula.
+            </p>
+        </div>
+    </div>
+    <div class="borderlessons" id="aula3">
+        <div>
+            <h2>Aula 3 - Criando nossa classe no código</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/classe-pessoa.png"><br>
+            <p>Primeiro, podemos identificar que realmente se trata de uma classe, pois possui a palavra "claas". <br>
+                Em seguida, podemos ver que é inserido uma chave, e o escopo do código é representada através dessa
+                chave.</p>
+            <p>Temos duas propriedades que a nossa pessoa possui, um nome e uma idade.</p>
+            <p>Após isso temos nossa ação Apresentar, que escreve no nosso console as informações da pessoa
+                dentro de uma frase de apresentação.</p>
+            <p>Após a propriedade, temos um get; set.<br>
+                <b>Get:</b> serve para pegar o valor, quando utilizamos o console.writeline, e passamos o
+                parâmetro {Nome}, ele está usando o Get para pegar esse valor<br>
+                <b>Set:</b> Serve para abrir a pocibilidade de alterar esse valor, como no exemplo abaixo,
+                onde nós alteramos o valor dessa propriedade.<br>
+                <img src="/src/assets/img-sintaxe/atribuir-nome.png"><br>
+                Nesse exemplo estamos declarando a propriedade Nome com o texto "Luan"
+            </p>
+        </div>
+    </div>
+    <div class="borderlessons" id="aula4">
+        <div>
+            <h2>Aula 4 - Usando namespaces</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/instancia-pessoa.png"><br>
+            <p>Na imagem acima começamos a construir a pessoa na nossa classe program, que é o ponto de entrada do nosso
+                programa, então quando o nosso programa for começar a ser lido, vai ser pela classe program.
+                <br>
+                Passamos o caminho da nossa classe pessoa: ExemploFundamentos.Models.<br>
+                Após isso criamos uma nova instância dessa pessoa, declarando a classe pessoa, depois definindo o nome
+                dessa nova instância e criando uma nova instância dessa classe, que foi atribuido à variável Pessoa p.
+            </p>
+        </div>
+    </div>
+
+    <div class="borderlessons" id="aula5">
+        <div>
+            <h2>Aula 5 - Usando a classe pessoa</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/info-pessoas.png"><br>
+            <p>Nessa imagem o vsc nos mostra os possíveis métodos que a variável "p" está possibilitada a
+                receber/executar.</p><br>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/apresentando-pessoa.png"><br>
+            <p>Agora podemos observar que estamos atribuindo os parâmetros que tinhamos estabelicido para a pessoa em
+                sua classe.<br>
+                Estamos atribuindo o seu Nome, e Idade, após isso estamos chamando a função p.Apresentar, nos referindo
+                a nossa variável Pessoa p que tem a função de Apresentar em seu
+                escopo original.</p>
+            <p>Olhando para o terminal, a função apresentar está funcionando corretamente, pois está escrevendo a frase
+                junto com os atributos que passamos para ela.</p>
+        </div>
+    </div>
+
+    <div class="borderlessons" id="aula6">
+        <div>
+            <h2>Aula 6 - Convenções Case</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/convensoes.png">
+            <br>
+            <p>As convenções são as maneiras em que padronizamos nosso código, se não seguirmos uma covenção, nosso
+                programa vai compilar corretamente, porém nosso código fica
+                confuso e difícil de ler.
+                <br>
+                Case é um padrão de escrita para o nome, suas diferenças são as letras ou algum caractere<br>
+                Na linguagem C#, nós usamos o camelCase e o PascalCase.
+            </p>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/convencoes-classe-pessoa.png">
+            <p>Na imagem podemos ver que o nome da classe, da propriedade e do método estão recebendo a case PascalCase.
+            </p>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/variavel-camelCase.png">
+            <p>Já nessa imagem nós utilizamos o camelCase para declaração de variáveis.</p>
+        </div>
+    </div>
+    <div class="borderlessons" id="aula7">
+        <div>
+            <h2>Aula 7 - Tipos de dados</h2>
+            <br>
+            <p>
+                Tipo de dados é uma informação que caracteriza o que ela representa.
+            </p>
+            <img src="/src/assets/img-sintaxe/tipo-de-dados-csharp.png"><br>
+            <a
+                href="https://www.softwaretestinghelp.com/c-sharp/csharp-data-types-and-variables/">https://www.softwaretestinghelp.com/c-sharp/csharp-data-types-and-variables/</a><br>
+        </div>
+        <div>
+            <h3>Declarando diferentes tipos de variáveis:</h3>
+            <img src="/src/assets/img-sintaxe/declando-tipos-variaveis.png">
+        </div>
+        <div>
+            <h3>Subscrevendo o valor da variável:</h3>
+            <img src="/src/assets/img-sintaxe/alterando-valor-variavel.png">
+            Podemos alterar o valor da variável quantas vezes quiser, por isso o nome <b>Variável</b>.
+        </div>
+    </div>
+    <div class="borderlessons" id="aula8">
+        <div>
+            <h2>Aula 8 - O Tipo Date Time</h2>
+
+            <img src="/src/assets/img-sintaxe/dateTime.png">
+            <p>Podemos ver que o vscode exibe como funciona o método "now" no <i>Struct</i> DateTime.<br>
+                Ele diz que o método <b>now</b> pega o DateTime atual desse computador.</p>
+            <p>O DateTime é um Struct, ele é um pouco diferente de uma classe. Por sí a Struct já é um tipo de
+                valor, no exemplo DataTipe, ele mesmo já se define com um valor para Data.</p>
+        </div>
+        <div>
+            <img src="/src/assets/img-sintaxe/data-formatada.png">
+            <p>Nessa imagem uzamos a extenção do método now <b>AddDays</b> que adiciona a quantidade de dias
+                desejado.<br>
+                Em seguida utilizamos um console.WriteLine para escrever nossa variável e colocamos um método
+                ToString para formatar nossa data para o formato que quisermos, nesse caso coloquei no padrão
+                brasileiro, e sem o horário.</p>
+        </div>
+    </div>
+    
+    <div class="borderlessons" id="links">
+        <h2>Links</h2>
+        <ul>
+            <li><a hef="https://www.tutorialspoint.com/csharp/csharp_data_types.htm"
+                    target="_blank"></a>https://www.tutorialspoint.com/csharp/csharp_data_types.htm</li>
+            <li><a hef="https://learn.microsoft.com/pt-br/dotnet/api/system.datetime?view=net-6.0"
+                    target="_blank">https://learn.microsoft.com/pt-br/dotnet/api/system.datetime?view=net-6.0</a>
+            </li>
+        </ul>
+    </div>
+</body>
