@@ -92,6 +92,150 @@
                 </a>
             </div>
     </div>
+    <div class="borderlessons" id="aula4">
+        <div>
+            <h2>Aula 4 - Diferenças .NET Framework e .NET</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-resumo-csharp/dotnet-dotnetframework.png">
+            <p>Como podemos ver na imagem, o .NET Framework é a versão legada
+                do .NET, sendo assim ela roda aplicativos exclusivamente para Windows.
+                 Já o .NET ou .NET Core é a versão mais atual, que roda em multiplataformas.
+                </p>
+            <p>
+                Além de ser multiplataforma, o .NET Core tem muitas melhorias adicionais do que o .NET Framework, como:
+                <ul>
+                    <li>Bibliotecas mais baratas.</li>
+                    <li>O código funciona de uma maneira muito mais fácil de ser executada.</li>
+                    <li>Possui uma injeção de dependência nativa.</li>
+                    <li>Custo de servidores reduzidos.</li>
+                    <li>Facilidade de desenvoler para míltiplos sistemas.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
+    <div class="borderlessons" id="aula5">
+        <div>
+            <h2>Aula 5 - Versões .NET Framework</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-resumo-csharp/versoes-dotnet-framework.png">
+            <p></p>
+            <p>
+                Na imagem podemos ver desde sua primeira versão (1.0) até sua última versão lançada em 2019 (4.8). A partir dessa 
+                versão, não haverá novas versões para o .NET Framework, pois o intuito da microsoft é ser 
+                multiplataforma, ela não tem mais o objetivo de fazer com que seus aplicativos funcionem apenas no Windows.
+            </p>
+        </div>
+        <div>
+            <img src="/src/assets/img-resumo-csharp/versoes-dotnet.png"><br>
+            <i>Referência: <a href="https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core">https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core</a></i>
+            <p></p>
+            <p>
+                Na imagem podemos ver que o .NET começa na versão 3.1, em 2019. 
+                O curioso é que após essa versão 3.1, ele pulou para apenas .NET 5, em novembro de 2020. Isso 
+                porquê, segundo a microsoft, eles ignoraram a versão 4.x para evitar a confusão com .NET Framework 4.8.<br>
+                Outro motivo foi retirar a palavra Core, para enfatizar que essa é a versão principal do .NET no futuro.                
+            </p>
+            <p>Ou seja, quando nos referimos ao .NET Core, queremos específicar as versões 3.1 para baixo.
+                E ao .NET, nos referimos as versões 5 para cima.
+            </p>
+            <ul>
+                Links Úteis:
+                <li><a href="https://pt.wikipedia.org/wiki/.NET_Framework">Wikipédia - .NET Framework</a></li>
+                <li><a href="https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core">.NET and .NET Core Support Policy</a></li>
+                <li><a href="https://learn.microsoft.com/pt-br/dotnet/core/get-started">Microsoft - Introdução ao .NET</a></li>
+            </ul>
 
+        </div>
+    </div>
+
+    
+    <div class="borderlessons" id="aula6">
+        <div>
+            <h2>Aula 6 - Compilador .NET e seu funcionamento</h2>
+        </div>
+        <div>
+            <h3>O que é um compilador?</h3>
+            <p><b>Linguagem de alto nível: </b>A linguagem que entendemos e escrevemos nosso código fonte.</p>
+            <p><b>Linguagem de baixo nível: </b>A linguagem que a máquina entende. 
+            Possui pouca abstração, sendo difícil de entender.</p>
+            <p>Podemos entender que, o compilador faz o trabalho de traduzir o que nós entendemos, para o que o computador entende.</p>
+        </div>
+        <div><img src="/src/assets/img-resumo-csharp/hello-word-differents.jpg">
+        <br>
+        <p>Podemos ver na imagem que o Assembly possui uma linguagem de baixo nível,
+             pois mesmo realizando a leitura em inglês do código, ainda fica difícil entender 
+             o que cada parte do código está fazendo. Enquanto o c# por exemplo, é uma linguagem de alto nível, pois é 
+             muito mais fácil de entender o que está acontecendo.
+        </p>
+        </div>
+        <div>
+            <img src="/src/assets/img-resumo-csharp/assembly-x-machine-code.png">
+            <br>
+            <p>Nessa imagem podemos ver que, apesar do Assembly ser considerada 
+                uma linguagem de baixo nível, um profissional que estudou essa linguagem vai conseguir entender.
+                 Porém a linguagem de machine code é muito mais difícil de ser traduzida, ou seja, em relação um com o outro, o 
+                 Assembly é uma linguagem de alto nível comparada com o machine code, que é de baixo nível.
+            </p>
+        </div>
+        <div><p>
+            <b>Compilador:</b> É um programa que realiza a conversão de linguagem de alto nível para baixo nível.
+        </p>
+    
+        <img src="/src/assets/img-resumo-csharp/compilador.png">
+    </div>
+    <div>
+        <h3>Fases de um compilador</h3>
+        <p>
+           <img src="/src/assets/img-resumo-csharp/fases-compilador.png"><br>
+           Embora não seja necessário entender o que cada etapa do compilador faz,
+            temos que ter em mente que ele é muito complexo. <br>
+            <ul>
+                <li><a href="https://www.guru99.com/compiler-design-phases-of-compiler.html">https://www.guru99.com/compiler-design-phases-of-compiler.html</a></li>
+                <li><a href="https://freecontent.manning.com/how-is-c-compiled/">https://freecontent.manning.com/how-is-c-compiled/</a></li>
+            </ul>
+
+        </p>
+    </div>
+    </div>
+
+    <div class="borderlessons" id="aula7">
+        <div>
+            <h2>Aula 7 - O compilador .NET</h2>
+        </div>
+        <div>
+            <img src="/src/assets/img-resumo-csharp/compilador-dotnet.png">
+            <br>
+            <p>Como podemos ver na imagem, temos o nosso código C#, e nosso objetivo
+                é chegar até o native code (machine code).
+            </p>
+            <p>Após escrevermos nosso código, o C# compiler entra em ação e gera um IL code,
+                 conhecido como "Código Intermediário". Após isso ele é compilado novamente usando o JIT compiler, 
+                 ou seja ele é compilado Just In Time, fazendo essa compilação na hora em que executamos o programa, e então convertendo o código para a arquitetura da máquina.
+
+            </p>
+        </div>
+    </div>
+    <div class="borderlessons" id="aula8">
+        <div>
+            <h2>Aula 8 - Compilador e Transpilador</h2>
+        </div>
+        <div>
+        <p><b>Compilador: </b>É um progrmaa que realiza a conversão de linguagem de alto nível para baixo nível. Exemplo: C$, Java</p>
+        <p><b>Transpialdor: </b>É a conversão de uma linguagem ou implementação para outra. A sua saída
+         permanece em linguagem de alto nível. Exemplo: Typescript e Javascript</p>
+        </div>
+        <div>
+            <h3>Nem toda linguagem é compilada</h3>
+            <p><b>Linguagem compilada: </b>São linguagens que o código fonte é traduzido para o código de máquina.</p>
+            <p><b>Linguagem interpretada: </b>São linguagens que fazem a leitura diretamente do código fonte. Exemplo: Javascript, PHP.</p>
+
+        </div>
+        <p><b>Links:</b><br>
+            Vídeo: Compilador (O programa essencial de todos os programadores) - Código Fonte TV<br>
+            <a href="https://www.youtube.com/watch?v=afUiVvDUIRA">https://www.youtube.com/watch?v=afUiVvDUIRA</a>
+        </p>
+    </div>
 </body>

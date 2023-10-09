@@ -13,7 +13,7 @@
 body {
     display: block;
     margin: 8px;
-    background-color: #000;
+    background-color: #aaaaaa;
     color: rgb(149, 0, 194); /* Verde neon */
     font-family: 'disclouse', sans-serif;
     padding: 0;
@@ -80,7 +80,7 @@ p {
     margin-block-end: 0.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: #e3e3e3;
+    color: #000;
 }
 
 ul {
