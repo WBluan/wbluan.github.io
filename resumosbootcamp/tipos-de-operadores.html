@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/moleculas/resumos/resumo-csharp.css">
+    <title>Tipos de Operadores em C#</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="padding-left: 20px;">Tipos de Operadores em C#</h1>
+    </div>
+    <div class="borderlessons" id="aula1">
+        <div>
+            <h2>Aula 1 - Operadores de Atribuição</h2>
+        </div>
+        <div>
+            <h3>Introdução operador de atribuição:</h3>
+            <p>O operador de atribuição <b>=</b> atribui o valor do operando ao lado direito a uma variável, uma
+                <b>=</b> ou um elemento indexador
+                fornecido pelo operando do lado esquerdo. O resultado de uma expressão de atribuição é o valor atribuído
+                a um operando do lado esquerdo.
+            </p>
+        </div>
+        <div>
+            <h3>Combinando operadores</h3>
+            <p>Também é possível combinar os operadores de atribuição com outros operadores aritméticos.<br>
+                No exemplo abaixo adicionamos 5 para nossa variável que já estava operando dois números.</p>
+            <img src="/src/assets/img-sintaxe/combinando-operadores.png">
+        </div>
+        <div>
+            <p></p><br>
+            <img src="/src/assets/imc-operadores/operador-mais-igual.png">
+            <p>Na imagem acima podemos ver que a operação é a mesma, pois quando colocamos o += junto, queremos dizer
+                que o operador vai pegar a própria
+                variável, e adicionar o que estamos colocando após o <b>=</b>.
+            </p>
+        </div>
+    </div>
+    <div class="borderlessons" id="aula2">
+        <div>
+            <h2>Aula 2 - Converção de variáveis</h2>
+            <p>Para converter uma variável nós usamos o Cast ou Casting.<br>
+                Podemos usar a classe <b>Convert</b>.</p><br>
+            <img src="/src/assets/imc-operadores/convert.png">
+            <p></p><br>
+            <p>Outra forma de converter variáveis é o tipo Parse.<br>
+                Sua principal diferença são os valores nulos.</p><br>
+            <img src="/src/assets/imc-operadores/parse-convert.png">
+            <p>Analizando o código podemos ver que o Convert não retorna erro ao converter um valor nulo, enquanto o
+                Parse quebra nosso programa.</p><br>
+            <p>Quando temos uma variável possível de quebrar nosso código, podemos utilizar o método <i>TryParse.</i>
+                Ele tenta converter a primeira variável e
+                caso ocorra algum erro ele pula para a segunda variável, podendo essa já estar declada ou ser declarada
+                dentro do método. Veja na imagem a seguir.</p><br>
+            <img src="/src/assets/imc-operadores/tryparse.png">
+        </div>
+    </div>
+    <div class="borderlessons" id="aula3">
+        <div>
+            <h2>Aula 3 - Operadores condicionais</h2>
+        </div>
+        <div>
+            <p>O operador condicional possibilita mudar o fluxo de execução de seu código, indicando um caminho que ele
+                deve percorrer.</p>
+        </div>
+        <div><img src="/src/assets/imc-operadores/usando-condicional-if.png"><br>
+            <p></p>
+            <p>No código acima usamos a condicional <b>if</b> para nos retornar se a venda foi realizada ou não. Criamos
+                uma variável bull que está setada como
+                true caso a quandidade em estoque for maior ou igual que a quantidade da compra.</p>
+        </div>
+        <div>
+            <h3>Debugando o operador condicional</h3>
+            <p>Para começarmos o debug podemos pressionar a tecla F5, para facilitar a leitura dos elementos o Visual Studio tem a opção de colocar um 
+                brake point na esquerda da linha que desejamos analizar, observe a imagem abaixo.<br>
+                <img src="/src/assets/imc-operadores/breake-point.PNG"><br>
+                O brake point faz com que o código pare quando ele chegar na linha em que ele foi colocado.
+            </p>
+        </div>
+        <div>
+            <h3>If alinhado</h3>
+            <p>Você pode colocar mais uma opção no if, se por exemplo você tiver mais uma opção no nosso código.<br>
+            Vamos supor que se o vendedor não vender nenhuma máquina, ele não entra no painel de metas.</p><br>
+            <img src="/src/assets/imc-operadores/elseif.PNG"><br>
+            <p>Na imagem anterior adicionamos mais uma condicional no nosso código, então ele vai fazer três tentativas, primeiro ele verifica se o vendedor 
+                não vendeu nenhuma máquina, se for falso ele pula para baixo e vê se o vendedor bateu a meta, se for falso ele retorna a mensagem dizendo que o vendedor
+                 não atingiu a meta.
+            </p>
+        </div>
+        <div>
+            <h3>Switch Case</h3>
+            <p>O Switch é uma alternativa para quando você tiver muitos if alinhados. Ele observa uma variável e retorna o valor do swtich ou o valor do default:<br>
+            <img src="/src/assets/imc-operadores/swtich.PNG"></p>
+        </div>
+        <div>
+            <h3>Operador Pipe</h3>
+            <br>
+            <img src="/src/assets/imc-operadores/operador-pipe.PNG">
+            <br>
+            <p>O operador pipe analiza uma opção entre duas, ele vê a primeira ou a segunda informação. Se uma delas for true, ele retorna 
+                o corpo dessa condição. Se nenhuma for true ela retorna o else.
+            </p>
+        </div>
+        <div>
+            <h3>Operador AND</h3>
+            <br>
+            <img src="/src/assets/imc-operadores/operador-and.PNG"><br>
+            <p>Usando o operador AND ou &&, ele analiza as duas opções da condicional e verifica se as duas retornam true, se uma ou mais condições não 
+                forem verdadeira ele retorna o else.
+            </p>
+        </div>
+        <div>
+            <h3>Operador NOT</h3><br>
+            <img src="/src/assets/imc-operadores/operador-not.PNG"><br>
+            <p>Ele tem o papel de inverter um valor booleano. Caso o valor do bool for true, ele muda para falso, e vice versa.<br>
+            Ele é representado pelo sinal de exclamação <b>!</b>.</p>
+            
+        </div>
+    </div>
+    <div class="borderlessons" id="linksOperado">
+        <h2>Links</h2><br>
+        <ul>
+            <li><a href="https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/boolean-logical-operators">https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/boolean-logical-operators</a></li>
+            <li><a href="https://www.w3schools.com/cs/cs_operators.php">https://www.w3schools.com/cs/cs_operators.php</a></li>
+        </ul>
+    </div>
+</body>
